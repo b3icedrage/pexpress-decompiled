@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/strategy_card"
+    android:layout_width="@dimen/robot_current_investment_strategy_card_width"
+    android:layout_height="wrap_content"
+    style="@style/RobotCurrentInvestmentSettingsItem">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/trading_strategies_strategy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/settings_header_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/robot_current_investment_settings_header_margin_top"
+            android:layout_marginStart="@dimen/robot_current_investment_settings_header_margin_start"
+            android:layout_marginEnd="@dimen/margin_small"
+            app:layout_constraintEnd_toStartOf="@+id/ic_settings_item"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/RobotCurrentInvestmentSettingsHeader"/>
+        <TextView
+            android:id="@+id/settings_description_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/robot_current_investment_settings_header_margin_top"
+            android:layout_marginEnd="@dimen/margin_medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/settings_header_text"
+            app:layout_constraintTop_toBottomOf="@+id/settings_header_text"
+            style="@style/RobotCurrentInvestmentSettingsDescription"/>
+        <ImageView
+            android:id="@+id/ic_settings_item"
+            android:layout_width="@dimen/robot_current_investment_settings_image_size"
+            android:layout_height="@dimen/robot_current_investment_settings_image_size"
+            android:layout_marginEnd="9dp"
+            app:layout_constraintBottom_toBottomOf="@+id/settings_header_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/settings_header_text"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

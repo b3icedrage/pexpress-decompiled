@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/RobotFooterRootContainer">
+    <include
+        android:id="@+id/robot_footer_first_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/footer_item"/>
+    <View
+        android:id="@+id/footer_first_separator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_separator_height"
+        android:layout_marginStart="@dimen/footer_separator_margin_horizontal"
+        android:layout_marginEnd="@dimen/footer_separator_margin_horizontal"
+        style="@style/RobotFooterSeparator"/>
+    <include
+        android:id="@+id/robot_footer_second_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/footer_item"/>
+    <View
+        android:id="@+id/footer_second_separator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_separator_height"
+        android:layout_marginStart="@dimen/footer_separator_margin_horizontal"
+        android:layout_marginEnd="@dimen/footer_separator_margin_horizontal"
+        style="@style/RobotFooterSeparator"/>
+    <include
+        android:id="@+id/robot_footer_third_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/footer_item"/>
+</LinearLayout>

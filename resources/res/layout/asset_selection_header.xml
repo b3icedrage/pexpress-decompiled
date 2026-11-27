@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/AssetSelectionCardHeaderContainer">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/asset_selection_card_header_icon"
+        android:layout_width="@dimen/asset_selection_card_header_icon_size"
+        android:layout_height="@dimen/asset_selection_card_header_icon_size"
+        android:layout_marginTop="@dimen/asset_selection_card_header_icon_margin_vertical"
+        android:layout_marginBottom="@dimen/asset_selection_card_header_icon_margin_vertical"
+        android:layout_marginStart="@dimen/common_outer_margin"
+        android:layout_marginVertical="@dimen/asset_selection_card_header_icon_margin_vertical"/>
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/asset_selection_card_header_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/asset_selection_card_header_title_margin_start"
+        android:layout_marginEnd="@dimen/asset_selection_card_header_title_margin_end"
+        style="@style/AssetSelectionCardHeaderTitle"/>
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:layout_gravity="center_vertical"
+        android:id="@+id/asset_selection_card_header_radio_button"
+        android:layout_width="@dimen/asset_selection_card_header_radio_button_size"
+        android:layout_height="@dimen/asset_selection_card_header_radio_button_size"
+        android:layout_marginEnd="@dimen/common_outer_margin"
+        style="@style/AltRobotRadioButton.AssetSelection"/>
+</LinearLayout>

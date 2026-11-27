@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/language_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/ChangeLanguageItemRootContainer">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/language_icon"
+        android:layout_width="@dimen/item_width"
+        android:layout_height="@dimen/item_icon_height"
+        android:layout_marginStart="@dimen/item_margin_start"
+        app:layout_constraintBottom_toBottomOf="@+id/language_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/language_name"
+        style="@style/ChangeLanguageItemIcon"/>
+    <TextView
+        android:id="@+id/language_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/change_language_item_margin_text_vertical"
+        android:layout_marginBottom="@dimen/change_language_item_margin_text_vertical"
+        android:layout_marginStart="@dimen/item_margin_text_start"
+        android:layout_marginEnd="@dimen/item_margin_text_end"
+        android:layout_marginVertical="@dimen/change_language_item_margin_text_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/language_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/ChangeLanguageItemTitle"/>
+    <View
+        android:id="@+id/language_separator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_separator_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/ChangeLanguageItemSeparator"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

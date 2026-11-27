@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textCursorDrawable">@color/primary</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="colorAccent">@color/secondary</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="showNextIcon">false</item>
+        <item name="showPreviousIcon">false</item>
+        <item name="snackbarStyle">@style/CustomSnackbar</item>
+        <item name="textAllCaps">false</item>
+        <item name="webViewLoaderLogo">@raw/web_view_loader_logo</item>
+    </style>
+    <style name="Base.Theme.SplashScreen" parent="@android:style/Theme.DeviceDefault.DayNight">
+        <item name="android:windowLayoutInDisplayCutoutMode">1</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+    <style name="Base.Theme.SplashScreen.Light" parent="@style/Base.Theme.SplashScreen">
+    </style>
+    <style name="Base.V29.Theme.JivoSDK" parent="@style/Base.Theme.JivoSDK">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Main.Theme.JivoSDK" parent="@style/Base.V29.Theme.JivoSDK">
+    </style>
+</resources>

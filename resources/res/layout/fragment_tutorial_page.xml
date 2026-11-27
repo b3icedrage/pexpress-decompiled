@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentTutorialItemRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/tutorialImage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentTutorialItemDescriptionContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TutorialPageLottieAnimation"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/fragmentTutorialItemDescriptionContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textContainerMarginHorizontal"
+        android:layout_marginRight="@dimen/textContainerMarginHorizontal"
+        android:layout_marginBottom="@dimen/tutorial_page_text_container_margin_bottom"
+        android:layout_marginHorizontal="@dimen/textContainerMarginHorizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:id="@+id/tutorialItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TutorialPageTitle"/>
+        <TextView
+            android:id="@+id/tutorialItemSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/subTitleMarginTop"
+            style="@style/TutorialPageSubtitle"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

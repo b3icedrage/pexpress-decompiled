@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/altSurface"/>
+            <corners android:radius="@dimen/profit_limit_progress_corner_radius"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="@color/altSurface"/>
+                <corners android:radius="@dimen/profit_limit_progress_corner_radius"/>
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <gradient
+                    android:startColor="@color/profitLimitBottomSheetProgressBarGradientStart"
+                    android:endColor="@color/profitLimitBottomSheetProgressBarGradientEnd"
+                    android:angle="0"
+                    android:centerColor="@color/profitLimitBottomSheetProgressBarGradientEnd"/>
+                <corners android:radius="@dimen/profit_limit_progress_corner_radius"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

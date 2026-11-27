@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/profile_info_entry_height_common"
+    style="@style/ProfileInfoEntryContainer">
+    <TextView
+        android:id="@+id/profile_info_entry_label_text"
+        android:layout_width="@dimen/profile_info_entry_label_text_width"
+        android:layout_height="wrap_content"
+        android:textDirection="locale"
+        android:layout_marginStart="@dimen/profile_info_entry_margin_horizontal_common"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/ProfileInfoEntryLabel"/>
+    <TextView
+        android:id="@+id/profile_info_entry_value_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textDirection="locale"
+        android:layout_marginStart="@dimen/profile_info_entry_value_text_margin_start"
+        android:layout_marginEnd="@dimen/profile_info_entry_margin_horizontal_common"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile_info_entry_label_text"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/ProfileInfoEntryValue"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

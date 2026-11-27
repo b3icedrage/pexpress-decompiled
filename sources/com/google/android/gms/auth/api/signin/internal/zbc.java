@@ -1,0 +1,51 @@
+package com.google.android.gms.auth.api.signin.internal;
+
+import android.content.Context;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.internal.SignInConnectionListener;
+import defpackage.AbstractC7045uk;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.Semaphore;
+import java.util.concurrent.TimeUnit;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class zbc extends AbstractC7045uk implements SignInConnectionListener {
+    private final Semaphore zba;
+    private final Set zbb;
+
+    public zbc(Context context, Set set) {
+        super(context);
+        this.zba = new Semaphore(0);
+        this.zbb = set;
+    }
+
+    @Override // defpackage.AbstractC7045uk
+    public final /* bridge */ /* synthetic */ Object loadInBackground() {
+        Iterator it = this.zbb.iterator();
+        int i = 0;
+        while (it.hasNext()) {
+            if (((GoogleApiClient) it.next()).maybeSignIn(this)) {
+                i++;
+            }
+        }
+        try {
+            this.zba.tryAcquire(i, 5L, TimeUnit.SECONDS);
+            return null;
+        } catch (InterruptedException unused) {
+            Thread.currentThread().interrupt();
+            return null;
+        }
+    }
+
+    @Override // com.google.android.gms.common.api.internal.SignInConnectionListener
+    public final void onComplete() {
+        this.zba.release();
+    }
+
+    @Override // defpackage.C6349rR0
+    public final void onStartLoading() {
+        this.zba.drainPermits();
+        forceLoad();
+    }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/description_top_margin"
+    style="@style/IndicatorTag">
+    <TextView
+        android:id="@+id/step_description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_top_margin"
+        android:layout_marginBottom="@dimen/text_top_margin"
+        android:layout_marginStart="@dimen/text_start_margin"
+        android:layout_marginEnd="@dimen/text_end_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/step_count_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/step_count_text"
+        app:layout_constraintTop_toTopOf="@+id/step_count_text"
+        style="@style/Caption2.Medium.Grey"/>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/emailHint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="@+id/emailTextInputLayout"
+    app:layout_constraintStart_toStartOf="@+id/emailTextInputLayout"
+    app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout"
+    style="@style/ErrorLabel">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registration_hint_icon_margin"
+            android:layout_marginBottom="@dimen/registration_hint_icon_margin"
+            android:layout_marginStart="@dimen/registration_hint_icon_margin"
+            android:layout_marginVertical="@dimen/registration_hint_icon_margin"
+            app:srcCompat="@drawable/ic_error"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/hint_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/registration_email_hint_margin"
+            android:text="@string/email_error_hint_text"
+            style="@style/ErrorLabelText"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/not_watched_story_indicator"
+    android:layout_width="@dimen/activation_stories_recycler_item_size"
+    android:layout_height="@dimen/activation_stories_recycler_item_size">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/activation_stories_recycler_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activation_stories_recycler_item_container_margin"
+        style="@style/ActivationBigStory">
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/activation_stories_recycler_item_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activation_stories_recycler_item_image_height"
+                android:foreground="@drawable/big_stories_gradient"
+                android:scaleType="centerInside"/>
+            <TextView
+                android:layout_gravity="bottom"
+                android:id="@+id/activation_stories_recycler_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activation_stories_recycler_item_name_margin"
+                style="@style/ActivationBigStoryName"/>
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator
+        android:interpolator="@android:interpolator/fast_out_slow_in"
+        android:duration="800"
+        android:valueFrom="M 180 123.204 C 179.621 123.204 179.251 123.324 178.945 123.546 C 178.638 123.77 178.41 124.084 178.293 124.444 C 178.175 124.805 178.175 125.193 178.293 125.554 C 178.41 125.914 178.638 126.228 178.945 126.452 C 179.251 126.674 179.621 126.794 180 126.794 C 180.379 126.794 180.749 126.674 181.055 126.452 C 181.362 126.228 181.59 125.914 181.707 125.554 C 181.825 125.193 181.825 124.805 181.707 124.444 C 181.59 124.084 181.362 123.77 181.055 123.546 C 180.749 123.324 180.379 123.204 180 123.204 Z"
+        android:valueTo="M 180 87.285 C 172.037 87.285 164.274 89.807 157.832 94.487 C 151.39 99.168 146.592 105.771 144.132 113.345 C 141.671 120.918 141.671 129.08 144.132 136.653 C 146.592 144.227 151.39 150.83 157.832 155.511 C 164.274 160.191 172.037 162.713 180 162.713 C 187.963 162.713 195.726 160.191 202.168 155.511 C 208.61 150.83 213.408 144.227 215.868 136.653 C 218.329 129.08 218.329 120.918 215.868 113.345 C 213.408 105.771 208.61 99.168 202.168 94.487 C 195.726 89.807 187.963 87.285 180 87.285 Z"
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@android:interpolator/fast_out_slow_in"
+        android:duration="20"
+        android:valueFrom="0"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="fillAlpha"/>
+</set>

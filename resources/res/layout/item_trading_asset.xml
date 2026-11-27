@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/AssetSelectionItemRootContainer">
+    <LinearLayout
+        android:id="@+id/all_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/asset_icon"
+            android:padding="@dimen/icon_padding_asset"
+            android:layout_width="@dimen/asset_selection_icon_size"
+            android:layout_height="@dimen/asset_selection_icon_size"
+            style="@style/RobotRecyclerItemCommonTitleSelectionItemIcon"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/asset_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/RobotRecyclerItemCommonTitleSelectionItemTitle"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/asset_percents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/tick_padding"
+            style="@style/AssetSelectionItemPercent"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/RobotItemBackground">
+    <TextView
+        android:id="@+id/step_count_text"
+        android:layout_width="@dimen/big_icon_size"
+        android:layout_height="@dimen/big_icon_size"
+        android:layout_marginTop="@dimen/icon_common_margin"
+        android:layout_marginBottom="@dimen/icon_common_margin"
+        android:layout_marginStart="@dimen/icon_common_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/RobotActivationStatusText"/>
+    <TextView
+        android:id="@+id/step_description_text"
+        android:layout_width="@dimen/description_text_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_start_margin"
+        android:layout_marginEnd="@dimen/text_end_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/step_count_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/step_count_text"
+        app:layout_constraintTop_toTopOf="@+id/step_count_text"
+        style="@style/RobotActivationStatusDescriptionText"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

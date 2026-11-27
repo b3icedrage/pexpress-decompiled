@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/trading_strategies_strategy_layout"
+    android:background="@color/transparent"
+    android:paddingTop="@dimen/robot_current_investment_linear_setting_padding_vertical"
+    android:paddingBottom="@dimen/robot_current_investment_linear_setting_padding_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/robot_current_investment_linear_setting_padding_vertical">
+    <ImageView
+        android:id="@+id/settings_icon"
+        android:layout_width="@dimen/robot_current_investment_settings_image_size"
+        android:layout_height="@dimen/robot_current_investment_settings_image_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/settings_title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/robot_current_investment_linear_settings_title_margin_start"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_icon"
+        app:layout_constraintStart_toEndOf="@+id/settings_icon"
+        app:layout_constraintTop_toTopOf="@+id/settings_icon"
+        style="@style/RobotCurrentInvestmentLinearSettingsTitle"/>
+    <TextView
+        android:id="@+id/settings_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/RobotCurrentInvestmentLinearSettingsValue"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

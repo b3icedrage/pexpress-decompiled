@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/trading_indicator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/RobotFragmentPartBlockContainer">
+    <TextView
+        android:id="@+id/maximum_profit_sub_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/technical_indicator_title"
+        android:layout_marginStart="@dimen/common_outer_margin"
+        android:layout_marginEnd="@dimen/common_outer_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/RobotCommonSubsectionTitle"/>
+    <include
+        android:id="@+id/robot_trading_indicator_selection_info_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_outer_margin"
+        android:layout_marginTop="@dimen/robot_common_value_container_margin_top"
+        android:layout_marginRight="@dimen/common_outer_margin"
+        android:layout_marginHorizontal="@dimen/common_outer_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maximum_profit_sub_title"
+        layout="@layout/trading_indicator_inner_info"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

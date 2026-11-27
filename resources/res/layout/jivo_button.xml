@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/jivo_sdk_vic_bubble"
+        android:contentDescription="@null"
+        app:borderWidth="0dp"
+        app:tint="@null"/>
+    <View
+        android:id="@+id/badge"
+        android:background="@drawable/jivo_sdk_bg_badge"
+        android:visibility="visible"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:elevation="12dp"/>
+</merge>

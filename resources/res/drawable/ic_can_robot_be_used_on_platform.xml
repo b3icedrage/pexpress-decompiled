@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="58dp"
+    android:width="58dp"
+    android:viewportWidth="58"
+    android:viewportHeight="58">
+    <path
+        android:fillColor="#449af3"
+        android:pathData="M6,0.75L52,0.75A5.25,5.25 0,0 1,57.25 6L57.25,52A5.25,5.25 0,0 1,52 57.25L6,57.25A5.25,5.25 0,0 1,0.75 52L0.75,6A5.25,5.25 0,0 1,6 0.75z"
+        android:strokeColor="#917beb"
+        android:strokeWidth="1.5"
+        android:fillAlpha="0.3"/>
+    <path
+        android:fillColor="@drawable/_ic_can_robot_be_used_on_platform__0_res_0x7f080012"
+        android:pathData="M29,29m-18,0a18,18 0,1 1,36 0a18,18 0,1 1,-36 0"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M25,29V25C25,22.791 26.791,21 29,21C31.209,21 33,22.791 33,25V29"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="1.5"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M21,29.636C21,27.628 22.791,26 25,26H33C35.209,26 37,27.628 37,29.636V34.364C37,36.372 35.209,38 33,38H25C22.791,38 21,36.372 21,34.364V29.636ZM29.997,33.633C30.008,33.719 29.978,33.805 29.914,33.869C29.851,33.933 29.761,33.97 29.666,33.97H28.333C28.238,33.97 28.147,33.933 28.084,33.869C28.021,33.805 27.991,33.719 28.001,33.633L28.212,31.914C27.87,31.688 27.666,31.331 27.666,30.939C27.666,30.271 28.264,29.727 28.999,29.727C29.735,29.727 30.333,30.271 30.333,30.939C30.333,31.331 30.129,31.688 29.787,31.914L29.997,33.633Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_ic_can_robot_be_used_on_platform__1_res_0x7f080013"
+        android:pathData="M38.556,26l0.921,0.921l-15.556,15.556l-0.921,-0.921z"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M38.263,25.707L38.263,25.707A1,1 67.965,0 1,38.263 27.121L24.121,41.263A1,1 71.713,0 1,22.707 41.263L22.707,41.263A1,1 71.713,0 1,22.707 39.849L36.849,25.707A1,1 67.965,0 1,38.263 25.707z"/>
+</vector>

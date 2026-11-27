@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_anim_icon__0_res_0x7f080002">
+    <target
+        android:name="out_elps"
+        android:animation="@drawable/_anim_icon__1_res_0x7f080003"/>
+    <target
+        android:name="center_elps"
+        android:animation="@drawable/_anim_icon__2_res_0x7f080004"/>
+    <target
+        android:name="path_3"
+        android:animation="@drawable/_anim_icon__3_res_0x7f080005"/>
+    <target
+        android:name="path_4"
+        android:animation="@drawable/_anim_icon__4_res_0x7f080006"/>
+    <target
+        android:name="path_5"
+        android:animation="@drawable/_anim_icon__5_res_0x7f080007"/>
+</animated-vector>

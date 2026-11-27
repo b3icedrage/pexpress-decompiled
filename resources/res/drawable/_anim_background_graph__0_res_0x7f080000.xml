@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:name="ob_graph_onboarding_anim"
+    android:height="250dp"
+    android:width="360dp"
+    android:viewportWidth="360"
+    android:viewportHeight="250">
+    <path
+        android:name="path_1"
+        android:pathData="M 0 232.5 L 18 232.5 L 19 220 L 37 225 L 38.5 208.5 L 74.5 217 L 89 151 L 104 161 L 107 127.5 L 136.5 165 L 139.5 156.5 L 156.5 174.5 L 176 119.5 L 190 137 L 196.5 123 L 204.5 135.5 L 215.5 75.5 L 241 97.5 L 244 81.5 L 273.5 112.5 L 276 95 L 285.5 94.5 L 290 91.5 L 298.5 96.5 L 302 79 L 308 82.5 L 308 66 L 317 70.5 L 317.5 46 L 328 56.5 L 331 26.5 L 355 51.5 L 350 24.5 L 356 29 L 360 29"
+        android:strokeColor="#7b80eb"
+        android:strokeWidth="3"/>
+</vector>

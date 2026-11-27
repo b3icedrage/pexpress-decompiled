@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/profile_nickname_input_height"
+    style="@style/ProfileInfoEntryContainer">
+    <EditText
+        android:id="@+id/profile_nickname_input_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textDirection="locale"
+        android:layout_marginStart="@dimen/profile_nickname_input_edit_text_margin_start"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/ProfileNicknameInput"/>
+    <TextView
+        android:id="@+id/profile_nickname_input_char_counter_text"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textDirection="locale"
+        android:layout_marginEnd="@dimen/profile_nickname_input_char_counter_text_margin_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/ProfileNicknameInputCharCounter"/>
+    <ImageView
+        android:id="@+id/profile_nickname_input_lock_image"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_rounded_lock"
+        android:layout_marginEnd="@dimen/profile_nickname_input_lock_image_margin_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/ProfileNicknameInputLock"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

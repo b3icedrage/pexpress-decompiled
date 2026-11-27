@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:name="iq_warning_anim"
+    android:height="48dp"
+    android:width="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:name="path"
+        android:fillColor="@color/altSurface"
+        android:pathData="M 24 0 C 17.637 0 11.529 2.53 7.029 7.029 C 2.53 11.529 0 17.637 0 24 C 0 30.363 2.53 36.471 7.029 40.971 C 11.529 45.47 17.637 48 24 48 C 30.363 48 36.471 45.47 40.971 40.971 C 45.47 36.471 48 30.363 48 24 C 48 17.637 45.47 11.529 40.971 7.029 C 36.471 2.53 30.363 0 24 0 Z"
+        android:strokeWidth="1"/>
+    <path
+        android:name="path_3"
+        android:pathData="M 24 14 L 24 26"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"/>
+    <path
+        android:name="path_5"
+        android:fillColor="#ffffff"
+        android:pathData="M 24 31 C 23.602 31 23.221 31.158 22.939 31.439 C 22.658 31.721 22.5 32.102 22.5 32.5 C 22.5 32.898 22.658 33.279 22.939 33.561 C 23.221 33.842 23.602 34 24 34 C 24.398 34 24.779 33.842 25.061 33.561 C 25.342 33.279 25.5 32.898 25.5 32.5 C 25.5 32.102 25.342 31.721 25.061 31.439 C 24.779 31.158 24.398 31 24 31 Z"
+        android:strokeWidth="1"/>
+</vector>

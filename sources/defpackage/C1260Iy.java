@@ -1,0 +1,38 @@
+package defpackage;
+
+import android.content.Context;
+import com.api.feature.analytics.reporters.ReporterApi;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+
+/* JADX INFO: renamed from: Iy, reason: case insensitive filesystem */
+/* JADX INFO: loaded from: classes3.dex */
+public final class C1260Iy extends AbstractC1104Gy {
+
+    @NotNull
+    public final String w;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C1260Iy(@NotNull Context context, @NotNull Pa2 urlsProvider, @NotNull C3296d7 activityOnBackPressedProvider, @NotNull C4923kf appDataRepository, @NotNull Sa2 userAgentProvideBase, @NotNull ReporterApi reporter) {
+        super(context, urlsProvider, activityOnBackPressedProvider, appDataRepository, userAgentProvideBase, reporter);
+        Intrinsics.checkNotNullParameter(context, "context");
+        Intrinsics.checkNotNullParameter(urlsProvider, "urlsProvider");
+        Intrinsics.checkNotNullParameter(activityOnBackPressedProvider, "activityOnBackPressedProvider");
+        Intrinsics.checkNotNullParameter(appDataRepository, "appDataRepository");
+        Intrinsics.checkNotNullParameter(userAgentProvideBase, "userAgentProvideBase");
+        Intrinsics.checkNotNullParameter(reporter, "reporter");
+        this.w = "6LcU2hgUAAAAAPHmrOrfTDy6DnROjq7Mr8LNwhNF";
+    }
+
+    @Override // defpackage.AbstractC1104Gy
+    @NotNull
+    public final String h() {
+        return this.w;
+    }
+
+    @Override // defpackage.AbstractC1104Gy
+    @NotNull
+    public final String i() {
+        return this.v >= 0 ? "\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n  <head>\n      <style>\n          \n            body {\n                transform:scale(1.0);\n                -webkit-transform:scale(1.0);\n                background-color: rgb(34, 34, 34);\n                display: flex;\n                align-items: flex-start;\n                justify-content: center;\n                margin: 0;\n                padding: 8px 0;\n            }\n            h1 {\n                margin: 0;\n            }\n        \n          body > div > div {\n              height: fit-content !important;\n          }\n          .grecaptcha-badge {\n            display: none !important;\n          }\n      </style>\n      <script src=\"https://recaptcha.net/recaptcha/api.js?render=6LeJDkwpAAAAAFUuiKS66HQe6Jz-Z-uPp5Dl6q5B&onload=onloadRecaptchaCallback\"></script>\n  </head>\n  <body>\n    <h1>\n      <form id=\"recaptchaForm\">\n        <div \n          class=\"js-recaptcha-widget g-recaptcha\" \n          data-name=\"login\" \n          data-callback=\"successfulReCAPTCHA\" \n          data-hl=\"en\"\n        ></div>\n      </form>\n    </h1>\n    <script>\n        // Posted as JSON that CaptchaTokens.parse reads. Created before grecaptcha loads: a v2\n        // solved before the v3 token is ready must wait for it, not await undefined.\n        window.appRecaptcha = {};\n        window.appRecaptcha.tokenPromise = new Promise((resolve, reject) => {\n          window.appRecaptcha.resolveToken = resolve;\n          window.appRecaptcha.rejectToken = reject;\n        });\n\n        const V3_TOKEN_WAIT_MS = 5000;\n\n        function withTimeout(promise, ms) {\n          const timeout = new Promise((_, reject) => {\n            setTimeout(() => reject(new Error('timeout')), ms);\n          });\n          return Promise.race([promise, timeout]);\n        }\n\n        async function successfulReCAPTCHA(response) {\n          const values = Object.fromEntries(new FormData(document.querySelector('#recaptchaForm')));\n          const captchaData = { gRecaptchaResponse: values['g-recaptcha-response'] };\n          // A failed or slow v3 must not hold the solved v2 back.\n          try {\n            const tokenPromise = window.appRecaptcha.tokenPromise;\n            captchaData.appRecaptchaToken = await withTimeout(tokenPromise, V3_TOKEN_WAIT_MS);\n          } catch (e) {\n            captchaData.appRecaptchaError = String((e && e.message) || e);\n          }\n          Android.captchaTokenSuccess(JSON.stringify(captchaData), false);\n        }\n    </script>\n    <script>\n      function onloadRecaptchaCallback() {\n          renderRecaptchaWidgets();\n      }\n  \n      function renderRecaptchaWidgets() {\n        const params = {\n              sitekey : '|SITEKEY|',\n              theme : 'light'\n          };\n          const recaptchaWidget = document.querySelector('.js-recaptcha-widget');\n          if (recaptchaWidget.dataset.callback) {\n            params['callback'] = recaptchaWidget.dataset.callback;\n          }\n          if (recaptchaWidget.dataset.hl) {\n            params['hl'] = recaptchaWidget.dataset.hl;\n          }\n\n          grecaptcha.render(recaptchaWidget, params);\n\n          window.grecaptcha.ready(() => {\n            try {\n              window.grecaptcha.execute('6LeJDkwpAAAAAFUuiKS66HQe6Jz-Z-uPp5Dl6q5B', { action: '|ACTION|' })\n                .then(window.appRecaptcha.resolveToken, window.appRecaptcha.rejectToken);\n            } catch (e) {\n              window.appRecaptcha.rejectToken(e);\n            }\n          });\n      }\n  </script>\n  </body>\n</html>\n        " : "\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n  <head>\n      <style>\n          \n            body {\n                transform:scale(1.0);\n                -webkit-transform:scale(1.0);\n                background-color: rgb(34, 34, 34);\n                display: flex;\n                align-items: flex-start;\n                justify-content: center;\n                margin: 0;\n                padding: 8px 0;\n            }\n            h1 {\n                margin: 0;\n            }\n        \n          body > div > div {\n              height: fit-content !important;\n          }\n          .grecaptcha-badge {\n            display: none !important;\n          }\n      </style>\n      <script src=\"https://recaptcha.net/recaptcha/api.js?render=6LeJDkwpAAAAAFUuiKS66HQe6Jz-Z-uPp5Dl6q5B&onload=onloadRecaptchaCallback\"></script>\n  </head>\n  <body>\n    <h1>\n      <form id=\"recaptchaForm\">\n        <div \n          class=\"js-recaptcha-widget g-recaptcha\" \n          data-name=\"login\" \n          data-callback=\"successfulReCAPTCHA\" \n          data-hl=\"en\"\n        ></div>\n      </form>\n    </h1>\n    <script>\n      window.appRecaptcha = {};\n\n      function onloadRecaptchaCallback() {\n          renderRecaptchaWidgets();\n      }\n  \n    function renderRecaptchaWidgets() {\n      const params = {\n        sitekey: '|SITEKEY|',\n        theme: 'light',\n        size: 'invisible',\n      };\n      const recaptchaWidget = document.querySelector('.js-recaptcha-widget');\n      if (recaptchaWidget.dataset.callback) {\n        params['callback'] = recaptchaWidget.dataset.callback;\n      }\n      if (recaptchaWidget.dataset.hl) {\n        params['hl'] = recaptchaWidget.dataset.hl;\n      }\n    \n      grecaptcha.render(recaptchaWidget, params);\n    \n      window.grecaptcha.ready(async () => {\n        console.log('GetRecaptchaToken; start');\n        window.appRecaptcha.tokenPromise = window.grecaptcha.execute('6LeJDkwpAAAAAFUuiKS66HQe6Jz-Z-uPp5Dl6q5B', {\n          action: '|ACTION|',\n        });\n        const token = await window.appRecaptcha.tokenPromise;\n        window.appRecaptcha.token = token;\n        Android.captchaTokenSuccess(window.appRecaptcha.token, true);\n        console.log('GetRecaptchaToken; complete', token);\n      });\n    }\n  </script>\n  </body>\n</html>\n        ";
+    }
+}

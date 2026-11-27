@@ -1,0 +1,112 @@
+package defpackage;
+
+import com.api.core.backend.repositories.user.models.requests.LoginRequest;
+import com.impl.core.backend.responseModels.AuthorizationResponseImpl;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+
+/* JADX INFO: renamed from: Yl, reason: case insensitive filesystem */
+/* JADX INFO: loaded from: classes.dex */
+@InterfaceC3368dU(c = "com.impl.core.backend.data_sources.AuthorizationDataSourceImpl$loginUser$2", f = "AuthorizationDataSourceImpl.kt", l = {66}, m = "invokeSuspend")
+public final class C2501Yl extends AW1 implements Function1<JM<? super AuthorizationResponseImpl>, Object> {
+    public int d;
+    public final /* synthetic */ C7698xq0 e;
+    public final /* synthetic */ C3224cm g;
+    public final /* synthetic */ LoginRequest h;
+
+    /* JADX INFO: renamed from: Yl$a */
+    @InterfaceC3368dU(c = "com.impl.core.backend.data_sources.AuthorizationDataSourceImpl$loginUser$2$1", f = "AuthorizationDataSourceImpl.kt", l = {67}, m = "invokeSuspend")
+    public static final class a extends AW1 implements Function1<JM<? super AuthorizationResponseImpl>, Object> {
+        public int d;
+        public final /* synthetic */ C3224cm e;
+        public final /* synthetic */ LoginRequest g;
+        public final /* synthetic */ C7698xq0 h;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public a(C3224cm c3224cm, JM jm, C7698xq0 c7698xq0, LoginRequest loginRequest) {
+            super(1, jm);
+            this.e = c3224cm;
+            this.g = loginRequest;
+            this.h = c7698xq0;
+        }
+
+        @Override // defpackage.AbstractC7487wq
+        public final JM<Unit> create(JM<?> jm) {
+            LoginRequest loginRequest = this.g;
+            return new a(this.e, jm, this.h, loginRequest);
+        }
+
+        @Override // kotlin.jvm.functions.Function1
+        public final Object invoke(JM<? super AuthorizationResponseImpl> jm) {
+            return ((a) create(jm)).invokeSuspend(Unit.a);
+        }
+
+        @Override // defpackage.AbstractC7487wq
+        public final Object invokeSuspend(Object obj) {
+            Object objI;
+            MN mn = MN.d;
+            int i = this.d;
+            C7698xq0 c7698xq0 = this.h;
+            C3224cm c3224cm = this.e;
+            if (i == 0) {
+                C1795Pt1.b(obj);
+                InterfaceC7864ye1 interfaceC7864ye1 = c3224cm.c;
+                LoginRequest loginRequest = this.g;
+                String login = loginRequest.getLogin();
+                String str = login == null ? "" : login;
+                String password = loginRequest.getPassword();
+                String str2 = password == null ? "" : password;
+                String strA = c3224cm.d.a();
+                this.d = 1;
+                objI = interfaceC7864ye1.i(strA, "59298", "affiliate", "sr", "8Yknv5LjoSNyA4", "install_robot_app", "50START", str, str2, 1, c7698xq0, this);
+                if (objI == mn) {
+                    return mn;
+                }
+            } else {
+                if (i != 1) {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                C1795Pt1.b(obj);
+                objI = obj;
+            }
+            return C3224cm.b(c3224cm, (C0935Et1) objI, c7698xq0);
+        }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C2501Yl(C3224cm c3224cm, JM jm, C7698xq0 c7698xq0, LoginRequest loginRequest) {
+        super(1, jm);
+        this.e = c7698xq0;
+        this.g = c3224cm;
+        this.h = loginRequest;
+    }
+
+    @Override // defpackage.AbstractC7487wq
+    public final JM<Unit> create(JM<?> jm) {
+        return new C2501Yl(this.g, jm, this.e, this.h);
+    }
+
+    @Override // kotlin.jvm.functions.Function1
+    public final Object invoke(JM<? super AuthorizationResponseImpl> jm) {
+        return ((C2501Yl) create(jm)).invokeSuspend(Unit.a);
+    }
+
+    @Override // defpackage.AbstractC7487wq
+    public final Object invokeSuspend(Object obj) throws Throwable {
+        MN mn = MN.d;
+        int i = this.d;
+        if (i != 0) {
+            if (i != 1) {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            C1795Pt1.b(obj);
+            return obj;
+        }
+        C1795Pt1.b(obj);
+        C7698xq0 c7698xq0 = this.e;
+        a aVar = new a(this.g, null, c7698xq0, this.h);
+        this.d = 1;
+        Object objA = c7698xq0.a(aVar, this);
+        return objA == mn ? mn : objA;
+    }
+}

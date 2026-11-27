@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:duration="900"
+        android:startOffset="1400"
+        android:valueFrom="M 180 88.729 C 170.384 88.729 161.152 92.553 154.353 99.353 C 147.553 106.152 143.729 115.384 143.729 125 C 143.729 134.616 147.553 143.848 154.353 150.647 C 161.152 157.447 170.384 161.271 180 161.271 C 189.616 161.271 198.848 157.447 205.647 150.647 C 212.447 143.848 216.271 134.616 216.271 125 C 216.271 115.384 212.447 106.152 205.647 99.353 C 198.848 92.553 189.616 88.729 180 88.729 Z"
+        android:valueTo="M 180 65 C 164.093 65 148.821 71.326 137.574 82.574 C 126.326 93.821 120 109.093 120 125 C 120 140.907 126.326 156.179 137.574 167.426 C 148.821 178.674 164.093 185 180 185 C 195.907 185 211.179 178.674 222.426 167.426 C 233.674 156.179 240 140.907 240 125 C 240 109.093 233.674 93.821 222.426 82.574 C 211.179 71.326 195.907 65 180 65 Z"
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@android:interpolator/fast_out_slow_in"
+        android:duration="900"
+        android:startOffset="1400"
+        android:valueFrom="0"
+        android:valueTo="0.34"
+        android:valueType="floatType"
+        android:propertyName="fillAlpha"/>
+    <objectAnimator
+        android:interpolator="@android:interpolator/fast_out_slow_in"
+        android:duration="800"
+        android:startOffset="2300"
+        android:valueFrom="M 180 65 C 164.093 65 148.821 71.326 137.574 82.574 C 126.326 93.821 120 109.093 120 125 C 120 140.907 126.326 156.179 137.574 167.426 C 148.821 178.674 164.093 185 180 185 C 195.907 185 211.179 178.674 222.426 167.426 C 233.674 156.179 240 140.907 240 125 C 240 109.093 233.674 93.821 222.426 82.574 C 211.179 71.326 195.907 65 180 65 Z"
+        android:valueTo="M 180 88.729 C 170.384 88.729 161.152 92.553 154.353 99.353 C 147.553 106.152 143.729 115.384 143.729 125 C 143.729 134.616 147.553 143.848 154.353 150.647 C 161.152 157.447 170.384 161.271 180 161.271 C 189.616 161.271 198.848 157.447 205.647 150.647 C 212.447 143.848 216.271 134.616 216.271 125 C 216.271 115.384 212.447 106.152 205.647 99.353 C 198.848 92.553 189.616 88.729 180 88.729 Z"
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:duration="800"
+        android:startOffset="2300"
+        android:valueFrom="0.34"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="fillAlpha"/>
+    <objectAnimator
+        android:interpolator="@android:interpolator/fast_out_slow_in"
+        android:duration="900"
+        android:startOffset="3100"
+        android:valueFrom="M 180 88.729 C 170.384 88.729 161.152 92.553 154.353 99.353 C 147.553 106.152 143.729 115.384 143.729 125 C 143.729 134.616 147.553 143.848 154.353 150.647 C 161.152 157.447 170.384 161.271 180 161.271 C 189.616 161.271 198.848 157.447 205.647 150.647 C 212.447 143.848 216.271 134.616 216.271 125 C 216.271 115.384 212.447 106.152 205.647 99.353 C 198.848 92.553 189.616 88.729 180 88.729 Z"
+        android:valueTo="M 180 65 C 164.093 65 148.821 71.326 137.574 82.574 C 126.326 93.821 120 109.093 120 125 C 120 140.907 126.326 156.179 137.574 167.426 C 148.821 178.674 164.093 185 180 185 C 195.907 185 211.179 178.674 222.426 167.426 C 233.674 156.179 240 140.907 240 125 C 240 109.093 233.674 93.821 222.426 82.574 C 211.179 71.326 195.907 65 180 65 Z"
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@android:interpolator/fast_out_slow_in"
+        android:duration="900"
+        android:startOffset="3100"
+        android:valueFrom="0"
+        android:valueTo="0.34"
+        android:valueType="floatType"
+        android:propertyName="fillAlpha"/>
+    <objectAnimator
+        android:interpolator="@android:interpolator/fast_out_slow_in"
+        android:duration="800"
+        android:startOffset="4000"
+        android:valueFrom="M 180 65 C 164.093 65 148.821 71.326 137.574 82.574 C 126.326 93.821 120 109.093 120 125 C 120 140.907 126.326 156.179 137.574 167.426 C 148.821 178.674 164.093 185 180 185 C 195.907 185 211.179 178.674 222.426 167.426 C 233.674 156.179 240 140.907 240 125 C 240 109.093 233.674 93.821 222.426 82.574 C 211.179 71.326 195.907 65 180 65 Z"
+        android:valueTo="M 180 88.729 C 170.384 88.729 161.152 92.553 154.353 99.353 C 147.553 106.152 143.729 115.384 143.729 125 C 143.729 134.616 147.553 143.848 154.353 150.647 C 161.152 157.447 170.384 161.271 180 161.271 C 189.616 161.271 198.848 157.447 205.647 150.647 C 212.447 143.848 216.271 134.616 216.271 125 C 216.271 115.384 212.447 106.152 205.647 99.353 C 198.848 92.553 189.616 88.729 180 88.729 Z"
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@android:interpolator/fast_out_slow_in"
+        android:duration="800"
+        android:startOffset="4000"
+        android:valueFrom="0.34"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="fillAlpha"/>
+</set>

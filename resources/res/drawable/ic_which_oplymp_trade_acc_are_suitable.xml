@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="58dp"
+    android:width="58dp"
+    android:viewportWidth="58"
+    android:viewportHeight="58">
+    <path
+        android:fillColor="#449af3"
+        android:pathData="M6,0.75L52,0.75A5.25,5.25 0,0 1,57.25 6L57.25,52A5.25,5.25 0,0 1,52 57.25L6,57.25A5.25,5.25 0,0 1,0.75 52L0.75,6A5.25,5.25 0,0 1,6 0.75z"
+        android:strokeColor="#917beb"
+        android:strokeWidth="1.5"
+        android:fillAlpha="0.3"/>
+    <path
+        android:fillColor="@drawable/_ic_which_oplymp_trade_acc_are_suitable__0_res_0x7f08008a"
+        android:pathData="M42.309,35.35C40.205,41.36 35.911,45.487 29.182,47.967C29.158,47.976 29.132,47.983 29.106,47.989C29.036,48.004 28.966,48.004 28.895,47.989C28.869,47.983 28.843,47.976 28.819,47.967C22.083,45.492 17.786,41.367 15.684,35.356C13.846,30.101 13.95,24.334 14.042,19.246L14.042,19.218C14.061,18.781 14.073,18.323 14.08,17.819C14.095,16.765 14.892,15.893 15.894,15.834C18.553,15.678 20.888,15.137 23.034,14.179C25.177,13.224 27.08,11.876 28.852,10.06C28.942,9.98 29.059,9.98 29.149,10.06C30.921,11.876 32.824,13.224 34.967,14.179C37.112,15.137 39.448,15.678 42.107,15.834C43.109,15.893 43.906,16.765 43.92,17.82C43.928,18.326 43.94,18.784 43.959,19.218C44.05,24.311 44.152,30.083 42.309,35.35Z"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M24,28.487L27.704,33.102L34,25.258"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+</vector>

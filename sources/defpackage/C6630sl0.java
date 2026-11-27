@@ -1,0 +1,32 @@
+package defpackage;
+
+/* JADX INFO: renamed from: sl0, reason: case insensitive filesystem */
+/* JADX INFO: loaded from: classes.dex */
+public final class C6630sl0 implements InterfaceC5331mb0 {
+    public final /* synthetic */ int a = 0;
+    public final InterfaceC1531Mk1 b;
+    public final InterfaceC1531Mk1 c;
+    public final InterfaceC1531Mk1 d;
+
+    public C6630sl0(InterfaceC1531Mk1 interfaceC1531Mk1, C4948kl0 c4948kl0, InterfaceC1531Mk1 interfaceC1531Mk2) {
+        this.b = interfaceC1531Mk1;
+        this.d = c4948kl0;
+        this.c = interfaceC1531Mk2;
+    }
+
+    @Override // defpackage.InterfaceC1531Mk1
+    public final Object get() {
+        switch (this.a) {
+            case 0:
+                return new C6420rl0((InterfaceC7012ub2) this.b.get(), (C4923kf) this.c.get(), (C4966kq1) this.d.get());
+            default:
+                return new Nc2((C4923kf) this.b.get(), (U22) ((C4948kl0) this.d).get(), (O3) this.c.get());
+        }
+    }
+
+    public C6630sl0(InterfaceC1531Mk1 interfaceC1531Mk1, InterfaceC1531Mk1 interfaceC1531Mk2, InterfaceC1531Mk1 interfaceC1531Mk3) {
+        this.b = interfaceC1531Mk1;
+        this.c = interfaceC1531Mk2;
+        this.d = interfaceC1531Mk3;
+    }
+}

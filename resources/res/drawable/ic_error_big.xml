@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_ic_error_big__0_res_0x7f080015">
+    <target
+        android:name="path_2"
+        android:animation="@drawable/_ic_error_big__1_res_0x7f080016"/>
+    <target
+        android:name="path_5"
+        android:animation="@drawable/_ic_error_big__2_res_0x7f080017"/>
+    <target
+        android:name="path_3"
+        android:animation="@drawable/_ic_error_big__3_res_0x7f080018"/>
+</animated-vector>

@@ -1,0 +1,22 @@
+package androidx.viewpager2.adapter;
+
+import androidx.viewpager2.widget.ViewPager2;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class a extends ViewPager2.e {
+    public final /* synthetic */ FragmentStateAdapter.b a;
+
+    public a(FragmentStateAdapter.b bVar) {
+        this.a = bVar;
+    }
+
+    @Override // androidx.viewpager2.widget.ViewPager2.e
+    public final void a(int i) {
+        this.a.b(false);
+    }
+
+    @Override // androidx.viewpager2.widget.ViewPager2.e
+    public final void c(int i) {
+        this.a.b(false);
+    }
+}

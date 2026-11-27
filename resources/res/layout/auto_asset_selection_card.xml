@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/AutoTradingRuleItemRootContainer">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+        <include
+            android:id="@+id/auto_asset_selection_header_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/asset_selection_header"/>
+        <include
+            android:id="@+id/auto_asset_selection_body_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/auto_trading_inner_info"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

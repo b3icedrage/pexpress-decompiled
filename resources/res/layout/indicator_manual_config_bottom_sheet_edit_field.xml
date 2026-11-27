@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_medium"
+    style="@style/IndicatorEditFieldBottomCard">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/indicator_manual_config_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_outer_margin"
+        android:layout_marginRight="@dimen/common_outer_margin"
+        android:layout_marginHorizontal="@dimen/common_outer_margin"
+        app:layout_constraintBottom_toTopOf="@+id/indicator_manual_config_fields"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/text_minus"
+            android:layout_width="@dimen/wide_outer_margin"
+            android:layout_height="@dimen/wide_outer_margin"
+            android:text="-"
+            android:layout_marginEnd="@dimen/common_outer_margin"
+            style="@style/IndicatorSignBtn"/>
+        <EditText
+            android:gravity="center"
+            android:id="@+id/indicator_edittext"
+            android:paddingTop="@dimen/outlined_button_padding_vertical"
+            android:paddingBottom="@dimen/outlined_button_padding_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:paddingVertical="@dimen/outlined_button_padding_vertical"
+            style="@style/EditIndicatorFieldInput"/>
+        <TextView
+            android:id="@+id/text_plus"
+            android:layout_width="@dimen/wide_outer_margin"
+            android:layout_height="@dimen/wide_outer_margin"
+            android:text="+"
+            android:layout_marginStart="@dimen/common_outer_margin"
+            style="@style/IndicatorSignBtn"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

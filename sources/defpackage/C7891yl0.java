@@ -1,0 +1,38 @@
+package defpackage;
+
+import com.api.core.backend.domain.models.resultModels.CommonError;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* JADX INFO: renamed from: yl0, reason: case insensitive filesystem */
+/* JADX INFO: loaded from: classes.dex */
+@InterfaceC3368dU(c = "com.base.core.backend.usecases.GetUserUseCaseBase", f = "GetUserUseCaseBase.kt", l = {51, 59, 173}, m = "getOurUserData")
+public final class C7891yl0 extends LM {
+    public C0754Cl0 d;
+    public ZF e;
+    public String g;
+    public CommonError h;
+    public long i;
+    public long j;
+    public long k;
+    public long l;
+    public int m;
+    public int n;
+    public /* synthetic */ Object o;
+    public final /* synthetic */ C0754Cl0 p;
+    public int q;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C7891yl0(C0754Cl0 c0754Cl0, LM lm) {
+        super(lm);
+        this.p = c0754Cl0;
+    }
+
+    @Override // defpackage.AbstractC7487wq
+    @Nullable
+    public final Object invokeSuspend(@NotNull Object obj) {
+        this.o = obj;
+        this.q |= Integer.MIN_VALUE;
+        return this.p.b(this);
+    }
+}

@@ -1,0 +1,19 @@
+package defpackage;
+
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class CT extends ML0 implements Function1<LT.b, Unit> {
+    public static final CT d = new CT(1);
+
+    @Override // kotlin.jvm.functions.Function1
+    public final Unit invoke(LT.b bVar) {
+        LT.b optional = bVar;
+        Intrinsics.checkNotNullParameter(optional, "$this$optional");
+        MT.b(optional, ':');
+        LT.c.a.c(optional);
+        return Unit.a;
+    }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_background_banner">@color/surface</color>
+    <color name="color_background_btn_send">@color/textGrey</color>
+    <color name="color_background_connection_state">@color/surface</color>
+    <color name="color_background_incoming_file">@color/surface</color>
+    <color name="color_background_incoming_message">@color/primary30</color>
+    <color name="color_background_input_text">@color/altSurface</color>
+    <color name="color_background_placeholder_image">@color/surface</color>
+    <color name="color_banner">@color/chatWhite</color>
+    <color name="color_btn_arrow_send">@color/altSurface</color>
+    <color name="color_input_text">@color/chatWhite</color>
+    <color name="color_on_background">@color/background</color>
+    <color name="color_on_surface">@color/chatWhite</color>
+    <color name="color_placeholder_image">@color/textGrey</color>
+    <color name="color_primary">@color/primary</color>
+    <color name="color_surface">@color/surface</color>
+    <color name="color_text_banner">@color/textGrey</color>
+    <color name="color_text_btn_send_contact_form">@color/chatWhite</color>
+    <color name="color_text_connection_state">@color/chatWhite</color>
+    <color name="color_text_error">@color/textGrey</color>
+    <color name="color_text_hint">@color/textGrey</color>
+    <color name="color_text_incoming_message">@color/chatWhite</color>
+    <color name="color_text_subtitle">@color/textGrey</color>
+    <color name="color_text_title">@color/chatWhite</color>
+    <color name="color_tint_navigation_icon">@color/chatWhite</color>
+    <color name="jivo_sdk_chat_background">#1e1e1e</color>
+    <color name="jivo_sdk_on_primary">#e0e0e0</color>
+    <color name="jivo_sdk_on_surface">#ffffff</color>
+    <color name="jivo_sdk_on_surface_variant">#808080</color>
+    <color name="jivo_sdk_surface">#121212</color>
+    <color name="jivo_sdk_surface_comment">#41403c</color>
+    <color name="jivo_sdk_surface_gray">#333333</color>
+    <color name="jivo_sdk_surface_outline">#1fffffff</color>
+    <color name="jivo_sdk_surface_overlay">#14212121</color>
+    <color name="jivo_sdk_surface_variant">#333333</color>
+</resources>

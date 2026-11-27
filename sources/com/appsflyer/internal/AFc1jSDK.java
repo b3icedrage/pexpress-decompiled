@@ -1,0 +1,52 @@
+package com.appsflyer.internal;
+
+import defpackage.C5668oA;
+import defpackage.InterfaceC3770fO0;
+import defpackage.XO0;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.SynchronousQueue;
+import java.util.concurrent.TimeUnit;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class AFc1jSDK {
+
+    @NotNull
+    private static final InterfaceC3770fO0 unregisterClient = XO0.b(new C5668oA(3));
+
+    @NotNull
+    public static final ScheduledExecutorService AFKeystoreWrapper() {
+        ScheduledExecutorService scheduledExecutorServiceNewScheduledThreadPool = Executors.newScheduledThreadPool(1);
+        Intrinsics.checkNotNullExpressionValue(scheduledExecutorServiceNewScheduledThreadPool, "");
+        return scheduledExecutorServiceNewScheduledThreadPool;
+    }
+
+    @NotNull
+    public static final ScheduledExecutorService AFLogger() {
+        ScheduledExecutorService scheduledExecutorServiceNewSingleThreadScheduledExecutor = Executors.newSingleThreadScheduledExecutor();
+        Intrinsics.checkNotNullExpressionValue(scheduledExecutorServiceNewSingleThreadScheduledExecutor, "");
+        return scheduledExecutorServiceNewSingleThreadScheduledExecutor;
+    }
+
+    @NotNull
+    public static final ExecutorService d() {
+        Object value = unregisterClient.getValue();
+        Intrinsics.checkNotNullExpressionValue(value, "");
+        return (ExecutorService) value;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final ExecutorService registerClient() {
+        return Executors.newSingleThreadExecutor();
+    }
+
+    @NotNull
+    public static final ExecutorService unregisterClient() {
+        AFc1oSDK aFc1oSDK = new AFc1oSDK(1, 4, 30L, TimeUnit.SECONDS, new SynchronousQueue(), null, 32, null);
+        aFc1oSDK.allowCoreThreadTimeOut(true);
+        return aFc1oSDK;
+    }
+}
